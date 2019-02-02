@@ -28,6 +28,10 @@ Timeout Error.  Attempt: 1
 Timeout Error.  Attempt: 2
 Command received successfully.
 ```
+Use action 'remote' to start a vehicle:
+```
+php Viper-cli.php johnsmith@gmail.com password123 0 remote 
+```
 This program will login once and then try a maximum of 5 times to execute the action, checking each time for a successful response code '0' and then terminating.
 
 This program utilizes the website:  'colt.calamp-ts.com'   You can sign in to this website and check the status of your vehicle(s).  If you have 1 vehicle, then it is likely vehicle# '0'.  If you have more than one vehicle, then you can send an 'arm' command to each vehicle '0', '1', '2', etc. and check the website to see which vehicle#'s correspond to each 'arm' command.
